@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 *{
     margin: 0;
@@ -22,12 +23,7 @@ body{
     padding: 30px;
     border-radius: 10px;
     transition: all 0.5s ease;
-}
-
-.box:hover{
-    box-shadow: 0px 0px 15px 0px #540085;
-    transform: scale(1.02);
-    transition: all 0.5s ease;
+    animation: pulse 1.2s infinite ease-in-out;
 }
 
 .box h2{
@@ -35,7 +31,7 @@ body{
     text-align: center;
     font-size: 26px;
     color: #695cfe;
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 input{
@@ -47,20 +43,32 @@ input{
     border: 2px solid#695cfe;
     outline: none;
     font-size: 22px;
+    color: #4c42b8;
+    font-family: 'Montserrat', sans-serif;
 }
 
 input::placeholder{
     font-size: 23px;
+    color: #695cfe;
+}
+
+.v2{
+    color: #fac130;
+}
+
+i{
+    font-size: 17px;
+    color: #fac130;
+    padding-right: 3px;
 }
 
 #button{
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     margin-top: 40px;
-    border: 2px solid#695cfe;
     width: 155px;
     height: 50px;
-    background: #540085;
+    background: #695cfe;
     text-align: center;
     color: #fff;
     display: flex;
@@ -68,6 +76,7 @@ input::placeholder{
     justify-content: center;
     border-radius: 6px;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 .btn2{
@@ -75,6 +84,21 @@ input::placeholder{
 }
 
 #button:hover{
-    color: aqua;
-    background: greenyellow;
+    background: #4c42b8;
+}
+
+#button:active{
+    transform: scale(0.96);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0px 0px 10px 0px #540085;
+    }
+    50% {
+        box-shadow: 0px 0px 25px 1px #52057e;
+    }
+    100% {
+        box-shadow: 0px 0px 10px 0px #540085;
+    }
 }

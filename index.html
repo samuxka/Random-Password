@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <title>Random Password</title>
 </head>
 <body>
         <div class="box">
-            <h2>Random Password Generator</h2>
+            <h2>Password <span class="v2">Generator</span></h2>
             <input type="text" placeholder="Password" id="password" readonly>
 
             <table>
                 <th>
-                    <div id="button" class="btn1" onclick="genPassword()">Generate</div>
+                    <div id="button" class="btn1" onclick="genPassword()">
+                        <span><i class="uil uil-bolt"></i>Generate</span> 
+                    </div>
                 </th>
                 <th>
-                    <div id="button" class="btn2" onclick="copyPassword()">Copy</div>
+                    <div id="button" class="btn2" onclick="copyPassword()">
+                        <span><i class="uil uil-copy"></i>Copy</span>
+                    </div>
                 </th>
             </table>
         </div>
